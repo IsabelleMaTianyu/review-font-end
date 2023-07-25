@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* (0,0,0,1) */
+        li{
+            color: aquamarine;
+        }
+        /* (0,0,0,1) */
+        ul{
+            color: black;
+        }
+        /* (0,0,0,2) */
+        ul li{
+            color: pink;
+        }
+        /* (0,0,1,0) */
+        .first{
+            color: yellowgreen;
+        }
+        /* (0,0,1,1) */
+        ul .first {
+            color: orange;
+        }
+        /* (0,0,1,1) */
+        .nav a{
+            color: gold;
+        }
+        /* (0,0,1,0) */
+        .green {
+            color: green;
+        }
+        /* (0,0,1,1) 层叠 */
+        a.green{
+            color: green;
+        }
+        /* (0,0,2,0) */
+        .nav.green{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+   <ul>
+    <li class="first">我是小li</li>
+    <li>我是小li</li>
+    <li>我是小li</li>
+    <li>我是小li</li>
+    <li>我是小li</li>
+   </ul>
+
+   <div class="nav">
+    <a href="#" class="green">导航栏</a>
+    <a href="#">导航栏</a>
+    <a href="#">导航栏</a>
+    <a href="#">导航栏</a>
+    <a href="#">导航栏</a>
+    <a href="#">导航栏</a>
+   </div>
+</body>
+</html>

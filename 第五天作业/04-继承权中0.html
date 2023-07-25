@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: peru;
+        }
+
+        #box {
+            /* 继承# */
+            color: plum;
+        }
+        /* 浏览器默认给a加的css 相当于 1 */
+        a{
+            color: blue;
+        }
+        /* 我自己写的给a层叠了 */
+        a{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p>我是文字</p>
+        <a href="#">LINK</a>
+    </div>
+</body>
+</html>
