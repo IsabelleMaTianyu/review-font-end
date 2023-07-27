@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        /* 伪元素 在什么什么之前 */
+        .box::before{
+            /* 必须要写的属性 content */
+            content: '我是';
+            background-color: paleturquoise;
+            width: 100px;
+            height: 100px;
+        }
+        /* 在什么什么之后 */
+        .box::after{
+            /* 必须要写的属性 content */
+            content: '你呢';
+            background-color: orchid;
+            width: 100px;
+            height: 100px;
+        }
+        ul {
+            list-style: none;
+        }
+        ul li::before{
+            content: '🧡';
+            color: palegreep;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">pink老师</div>
+    <ul>
+        <li>这是新闻的内容部分</li>
+        <li>这是新闻的内容部分</li>
+        <li>这是新闻的内容部分</li>
+        <li>这是新闻的内容部分</li>
+        <li>这是新闻的内容部分</li>
+        <li>这是新闻的内容部分</li>
+        <li>这是新闻的内容部分</li>
+        <li>这是新闻的内容部分</li>
+        <li>这是新闻的内容部分</li>
+    </ul>
+</body>
+</html>

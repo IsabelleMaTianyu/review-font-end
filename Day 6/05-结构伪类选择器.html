@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 第一个孩子 并且是小li */
+        /* ul li:first-child {
+            background-color: pink;
+        } 
+        /* 最后一个孩子 */
+        /* ul li:last-child{
+            background-color: pink;
+        } */
+        /* 第二个孩子 选第几个（n) 就写几*/
+        /* ul li:nth-child(2){
+            background-color: skyblue;
+        } */ 
+        /* 关键词  odd奇数  even偶数*/
+        /* ul li:nth-child(odd){
+            background-color: pink;
+        }
+        ul li:nth-child(even){
+            background-color: skyblue;
+        } */
+        /* n 默认从 0 开始 0123456 */
+        /* 2n = even 2n+1 = odd */
+        /* -n+3 选择前面3个 n+3 从第三个（包括第三个）往后三个 */
+        ul li:nth-child(n+3){
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>我是第1个小li</li>
+        <li>我是第2个小li</li>
+        <li>我是第3个小li</li>
+        <li>我是第4个小li</li>
+        <li>我是第5个小li</li>
+        <li>我是第6个小li</li>
+        <li>我是第7个小li</li>
+        <li>我是第8个小li</li>
+    </ul>
+</body>
+</html>
